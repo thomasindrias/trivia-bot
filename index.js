@@ -1,7 +1,6 @@
+require('dotenv').config();
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-
-const token = 'NzM0MDQzMDQwNTgyNDY3Njk0.XxL_Hw.jC3N3ytrwr2OAfCqZc2Z7xNffhc';
 
 var PREFIX = '!';
 
@@ -181,4 +180,4 @@ bot.on('message', message => {
   }
 });
 
-bot.login(token);
+bot.login(process.env.DISCORD_TOKEN);
